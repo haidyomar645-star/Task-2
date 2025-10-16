@@ -5,12 +5,12 @@ my-jobs:
   runs-on: ubuntu-latest
   steps:
   name: my-steps
-  run: echo "Hello World"
+  run: echo "hello world"
 
   my-job2:
   runs-on: ubuntu-latest
   needs: my-jobs
   steps:
   name: my-steps
-  run: echo "Hello World "
+  run: echo "hello world "
   
