@@ -1,0 +1,16 @@
+name: hello-world
+on: push
+jobs:
+my-jobs:
+  runs-on: ubuntu-latest
+  steps:
+  name: my-steps
+  run: echo "Hello World"
+
+  my-job2:
+  runs-on: ubuntu-latest
+  needs: my-jobs
+  steps:
+  name: my-steps
+  run: echo "Hello World "
+  
